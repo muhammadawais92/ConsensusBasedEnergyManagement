@@ -1,11 +1,7 @@
-Project Overview
+Project Description
 
-A fully distributed solution to the economic dispatch problem using a graph-theoretic consensus algorithm is proposed in this work.
+This project proposes a distributed energy management optimization approach for an Active Distribution Network with high penetration of distributed generation, renewable energy sources, and energy storage. To overcome the limitations of traditional centralized control, a fully distributed consensus-based algorithm is applied, reducing computational burden and avoiding single-point failure.
 
-The total load demand and generation balance are maintained using only local mismatch information at each bus. Unlike other related approaches, the proposed scheme does not require any virtual node to share the total demand among agents initially.
+A distributed consensus protocol is used to solve a social welfare maximization problem in a 33-bus distribution system equipped with distributed generators, photovoltaic units, wind sources, and battery storage. The incremental cost of electricity is selected as the consensus variable, while only local power mismatch and incremental cost information are exchanged between neighboring agents, ensuring scalability and privacy.
 
-The algorithm is tested under various conditions, including plug-and-play scenarios and variable load demand in a microgrid structure. Simulation results demonstrate that the algorithm converges to the optimal solution across all cases, validating its effectiveness.
-
-Furthermore, the idea is extended to a larger network to evaluate scalability, where the algorithm again achieves convergence while maintaining power balance.
-
-In future work, transmission and communication channel losses, as well as channel noise, will be considered to further analyze the convergence behavior of the proposed scheme.
+The effectiveness of the proposed algorithm is validated using full-day renewable generation and load profiles. Performance is evaluated under peak load conditions, varying demand, and plug-and-play operation of distributed resources. A convergence speed analysis is also presented to study the impact of algorithm parameters on convergence behavior.
